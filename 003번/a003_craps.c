@@ -19,8 +19,8 @@ void output_result(int cnt[])
 
 printf("결과\n");
 for(int i=2;i<=12;i++)
-	{prob=cnt[i]/30;
-	printf("%d :%2d 확률 %5.2lf%%%c",i,cnt[i],prob,i%4==0?'\n':' '); }
+	{prob= (double)cnt[i]/30;
+	printf("%d :%2d 확률 %5.2lf%%\n",i,cnt[i],prob*100); }
 }
 
 
