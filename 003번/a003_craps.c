@@ -16,7 +16,7 @@
 
 
 int main(void)
-{
+{int cnt[13] = { 0 };
 
 
 
