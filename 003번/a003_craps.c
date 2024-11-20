@@ -4,10 +4,15 @@
 
 int rand_min = 1;
 int rand_max = 6;
+int try_num = 0;
 
+void input_try_num(void);
 void make_rand(int*, int[]);
 void output_result(int[]);
 
+void input_try_num(void)
+{printf("몇번을 실행하시겠습니까>> ");
+scanf_s("%d", &try_num);}
 
 void make_rand(int* pdice, int cnt[])
 {*pdice = rand() % (rand_max - rand_min + 1) + rand_min;
@@ -33,7 +38,7 @@ int dice;
 
 srand((unsigned int)time(0));
 
-for (int i = 0; i < 30; i++)
+for (int i = 0; i < try_num; i++)
 {make_rand(&dice, cnt);}
 
 output_result(cnt);
