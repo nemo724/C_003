@@ -22,10 +22,10 @@ cnt[*pdice] += 1;}
 void output_result(int cnt[])
 {double prob;
 
-printf("결과\n");
+ printf("결과\n");
 for(int i=2;i<=12;i++)
-	{prob= (double)cnt[i]/30;
-	printf("%d :%2d 확률 %5.2lf%%\n",i,cnt[i],prob*100); }
+    {prob= (double)cnt[i]/30;
+     printf("%d :%2d 확률 %5.2lf%%\n",i,cnt[i],prob*100); }
 }
 
 
@@ -41,10 +41,4 @@ srand((unsigned int)time(0));
 for (int i = 0; i < try_num; i++)
 {make_rand(&dice, cnt);}
 
-output_result(cnt);
-
-
-
-
-
-}
+output_result(cnt);}
